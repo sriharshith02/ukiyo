@@ -1,0 +1,55 @@
+.heading {
+    padding-left: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #ff4c68;
+    font-weight: bold;
+  }
+  .car {
+    padding-top: 1rem;
+  
+  }
+  .slide {
+    position: relative;
+    margin-left: 15rem;
+    padding-top: 2rem;
+  
+  }
+  .slide {
+    height: 300px;
+    width: 800px;
+  }
+  .img {
+    height: 300px;
+    width: 800px;
+  }
+  .description {
+    padding-top: 2rem;
+  }
+  .exp {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .row {
+    padding-top: 1rem;
+  }
+  .share {
+    padding-top: 1rem;
+  }
+  .carousel {
+    background-color: #f5cebe;
+    padding-bottom: 4rem;
+  }
+  .description {
+    font-family: "Proxima Nova",system-ui,sans-serif;
+  font-weight:normal;
+  }
+  .card{
+    background-color: #ff4c68;
+  }
+  .p {
+    font-size:20px;
+  }
+  .li {
+    font-size: 20px;
+  }

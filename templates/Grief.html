@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'meghana.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <title>Grief</title>
+</head>
+
+<body>
+  <div class="heading">
+    <h1 style="color:#fff;">GRIEF</h1>
+  </div>
+  <div class="carousel">
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container pic1">
+            <img class="img" src="{% static 'grief1.png' %}" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container pic2">
+            <img class="img" src="{% static 'grief2.png' %}" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container pic3">
+            <img class="img" src="{% static 'grief3.png' %}" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span style="background-color:black;height:40px;width:60px;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" class="btn">
+          <span style="background-color:black; height:40px;width:60px;" class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container description" style="color: #ff4c68;font-size: 10px;">
+    <h3>Grief is normal</h3>
+    <p style="font-size:20px;">Grief is a natural reaction to loss, whether you’re grieving the death of a loved one or another kind of loss–the end of a relationship, a deep disappointment or a move to a new community.
+When you grieve, you’ll experience a tangled web of emotions including sadness, shock, numbness, anger, frustration, denial and acceptance.
+
+One thing is clear. Life is changed forever.
+
+Grief comes to everyone at some point in their lives. Typical grief can involve:</p>
+<li style="font-size:20px;">Overwhelming sadness
+</li>
+<li style="font-size:20px;">Appetite changes
+</li>
+<li style="font-size:20px;">Changes in sleep patterns
+</li>
+<li style="font-size:20px;">Mixed, confusing and painful emotions</li>
+<li style="font-size:20px;">Difficulty with routine tasks like showering & housework</li>
+<li style="font-size:20px;">Changes in concentration and memory</li>
+<li style="font-size:20px;">Difficulty making decisions</li>
+<li style="font-size:20px;">Pulling away from people</li>
+<h3>Allow yourself to grieve</h3>
+<p style="font-size:20px;">Coping with loss may be one of the biggest challenges you face. Instead of denying feelings or avoiding sadness, grieving well helps you adjust to the situation and find meaning in new circumstances.
+
+Social support and healthy habits can help you through the most difficult times. It is important to:</p>
+<li style="font-size:20px;">Talk about your loss with friends and family</li>
+<li style="font-size:20px;">Accept a mixture of feelings and mood swings</li>
+<li style="font-size:20px;">Share stories and celebrate your loved one
+</li>
+<li style="font-size:20px;">Meditate, pray or participate in spiritual practices</li>
+<li style="font-size:20px;">Allow others to help in practical ways like bringing meals or doing errands
+</li>
+<li style="font-size:20px;">Eat well and get plenty of rest</li>
+<h3>Difficult situations</h3>
+<li style="font-size:20px;">Depression. When combined with depression, feelings of overwhelming sadness and hopelessness may not go away on their own. Changes in appetite, sleeping problems and difficulty functioning day-to-day could signal clinical depression disguised as grief.
+</li>
+<li style="font-size:20px;">Anxiety. Anxiety and fear are normal feelings of grief. If they increase and intensify, or are combined with irritability, racing thoughts, muscle tension, insomnia, stomach pain and other physical symptoms, underlying anxiety may hinder your grieving process.</li>
+<li style="font-size:20px;">Anger. If the relationship with the deceased was a difficult one, it may take extra time and thought to resolve your feelings.
+</li>
+<h3>Grief and children</h3>
+<p style="font-size:20px;">Children experience the same emotions as adults when faced with a loss, yet their grief often isn’t given the attention it deserves. For a child, grief may be caused by the loss of a grandparent or a pet, a best friend moving away or parents getting divorced.
+
+When a death impacts children, their responses will depend on their age and maturity. At every age:</p>
+<li style="font-size:20px;">Explain death in a child’s terms, using clear, direct language.</li>
+<li style="font-size:20px;">Give children opportunities to talk about their feelings and the deceased.</li>
+<li style="font-size:20px;">Help children understand they are not alone by allowing them to grieve with other family members.</li>
+<li style="font-size:20px;">Ensure children feel safe by being a loving, consistent presence in their lives.</li>
+<h3>When to seek help</h3>
+<p style="font-size:20px;">It’s not unusual to experience difficult emotions on-and-off after a loss. Usually the intensity is reduced over time, however, and most people reach a point when day-to-day activities temporarily move grief to the sidelines. Others struggle longer. The difference between normal grief and severe (or complicated) grief is largely a matter of timing.
+
+When deep feelings of denial, distress, anger, guilt, idealization, hostility or panic continue for months, you may benefit from seeing a psychologist or other mental health professional.
+
+</p>
+
+  </div>
+  <div class="container exp" style="padding-bottom:100px;">
+    <h3 style="color:#ff4c68;">Experiences</h3>
+    <div class="row">
+      {% for i in data %}
+      <div class="col-lg-4" style="padding-top: 50px;">
+        <div class="card" style="width: 18rem;height: 28rem;">
+          <div class="card-body" style="background-color:#ff4c68;color:#fff;text-align:center;">
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text">{{i.exp}}</p>
+
+          </div>
+        </div>
+      </div>
+     {% endfor %}
+  </div>
+  </div>
+  <div class="container share">
+    <h3 style="color:#ff4c68;">Share ur Experiences</h3>
+    
+          <form action="Grief" method="POST" class="row g-3">
+              {%csrf_token%}
+        <div class="col-12">
+          <label for="Name" class="form-label">Name</label>
+          <input name="name"type="text" class="form-control" id="inputFirstname">
+        </div>
+        <div class="col-12">
+            <label for="inputDisease" class="form-label">Concern</label>
+            <br>
+            <select name='option' required>
+              <option value="depression">Depression</option>
+              <option value="grief">Grief</option>
+              <option value="anger">Anger</option>
+              <option value="anxiety">Anxiety</option>
+              <option value="bullying">Bullying</option>
+            </select>
+  
+          </div>
+          <div class="col-md-12">
+            <label for="inputFirstname" class="form-label">Type in your Feedback</label>
+            <textarea class="form-control" name="feedback" rows="4" cols="50">
+          </textarea>
+          </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+  
+        </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+</body>
+
+</html>
